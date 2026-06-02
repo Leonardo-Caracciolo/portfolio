@@ -1,4 +1,6 @@
 ---
+import ChatWidget from '../components/ChatWidget';
+
 interface Props {
   title?: string;
   description?: string;
@@ -22,5 +24,6 @@ const {
   </head>
   <body>
     <slot />
+    <ChatWidget client:load />
   </body>
 </html>
